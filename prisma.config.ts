@@ -5,7 +5,6 @@ import path from 'path'
 dotenv.config({ path: path.resolve(process.cwd(), '.env') })
 
 export default defineConfig({
-  earlyAccess: true,
   schema: 'prisma/schema.prisma',
   datasource: {
     url: process.env.DIRECT_URL,
